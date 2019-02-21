@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es"> <!--Lenguaje-->
+	<head>
+		<meta charset="utf-8"> <!--Codificación de caracteres-->
+		<title>ejer15</title> <!--Titulo asociado a resultados de busqueda de nuestra 
+		pagina web-->
+		<style>
+			body{background-image: url("imagenes/fondoencu.jpg");
+				color: yellow;
+				text-align: center;}
+			table {margin:auto;}
+			table {border: 2px;
+				border-collapse: collapse;}
+			caption{text-align: center;
+				color: green;}
+		
+		</style>
+	</head>
+	
+	<body>
+		
+		<table>
+			<caption>Encuesta de satisfacción</caption>
+			<tr>
+				<form action="gestion.php" method="post" enctype="http://172.20.105.100/insertar_cv2.php">
+			
+					<label></label><input type="text" name="Nombre" placeholder="Nombre" required="required"/><br/>
+				
+					<label></label><input  class="ancho" type="text" name="Apellidos" placeholder="Apellidos" required="required"/><br/>
+				
+					<label></label><input  class="ancho" type="Email" name="Email" placeholder="Email"/><br/>
+				
+					<label></label><input type="password" name="Contrasenia" maxlength="10" placeholder="contraseña"/><br/>
+				
+					<label></label><input type="text" name="DNI" maxlength="8" placeholder="DNI sin letra"/><br/>
+				
+					</label><input type="text" name="Telefono" maxlength="9" placeholder="Telefono"/><br/>
+				</form>
+			</tr>
+			
+			<form>
+				<label>Sexo: </label><br/>
+				<input type="radio" name="sexo" value="mujer"/><label>Hombre </label><br/>
+				<input type="radio" name="sexo" value="hombre"/><label>Mujer </label><br/>
+				
+				<label>Fecha de nacimiento</label><input type="Date" name="Fecha"/><br/>
+				
+				<label>Incluir mi foto</label><input type="file" name="foto"/><br/>
+				<input type="hidden" name="cuenta" value="25"/>
+				
+				<label>Aficiones</label><br/>
+				<input type="checkbox" name="Deporte" value="Deporte" /><label>Deporte</label>
+				<input type="checkbox" name="Lectura" value="Lectura" /><label>Lectura</label><br/>
+				<input type="checkbox" name="Suscribirse" value="suscribirse" /><label>Gastronomia</label>
+				<input type="checkbox" name="Suscribirse" value="suscribirse" /><label>Viajar</label><br/>
+				
+				<br/> <!--Salto de linea-->
+				
+				<label>Opinión </label><br/>
+				<textarea name="opinion" col="20" rows="10" placeholder="tu opinion">
+					Comentarios adicionales
+				</textarea>
+				<br/>
+				<input type="checkbox" name="Suscribirse" value="suscribirse" checked="checked"/><label>Suscribirse al boletin de novedades</label><br/>
+				
+				<br> <!--Salto de linea-->
+				
+				<input type="submit" name="Guardar cambios" value="Guardar cambios"/>
+				<input type="reset" name="Borrar los datos introducidos" value="Borrar los datos introducidos"/>
+				
+			</form>
+			
+		</table>
+	
+		<aside>
+		
+		</aside>
+		
+		<footer>
+		</footer>
+		
+	</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es"> <!--Lenguaje-->
+
+	<head>
+		<meta charset="utf-8" /> <!--Codificacion de caracteres-->
+		<title>Encuesta</title> <!--Titulo asociado a resultados de busqueda de nuestra 
+		pagina web-->
+		<style>
+			table {width: 100%;} /**/
+			table {border: 2px;
+				border-collapse: collapse;}
+			td,th {border: 2px solid gray;
+				padding: 10px;}
+			caption{font-size: 30px;
+				color: black;}		/*Tamaño de titulo y color*/
+			h2{text-align: center;}
+			.centrar{text-align: center;}
+		</style>
+		
+	</head>
+
+	<body>
+		
+		<table> <!--Seccion uno-->
+		 
+			<caption>Encuesta </caption> <!--Titulo de nuestra tabla-->
+			
+				<tr class="centrar"> <!--Columnas-->
+					
+					<td> 
+						
+						<h2>Datos</h2> <!--Subtitulo 1-->
+						
+						<label for="nombre">Introduce tu nombre:</label> 
+						<input id="nombre" type="text" name="nombre" size="15" placeholder="Nombre">
+						
+						<label for="telefono">Telefono:</label> 
+						<input id="telefono" type="tel" name="telefono" size="10"  maxlength="9"
+						placeholder="Telefono">
+						
+						
+						
+						<label for="Ciudad">Direccion:</label> 
+						<input id="Ciudad" type="tel" name="Ciudad" size="10"  maxlength="9"
+						placeholder="Ciudad">
+						
+						<label for="nombre">Email:</label> 
+						<input id="email" type="email" name="email" size="20" placeholder=
+						"nombre@email.com">
+						
+					</td>
+				</tr>
+			
+		</table>
+		
+		<hr>
+		
+		<table> <!--Seccion 2-->
+			
+			<thead>
+				
+				<tr> 
+					<td> 
+						
+						<h2>Satisfaccion</h2> <!--Subtitulo 1-->
+						
+						<label>Que tal te ha parecido:</label><br>
+						
+						<input type="radio" name="estado" value="Mal"/><label>Mal</label><br>
+						<input type="radio" name="estado" value="Bien"/><label>Bien</label><br>
+						<input type="radio" name="estado" value="Muy bien"/><label>Muy bien</label><br>
+						
+						<br>
+						
+						<h2>Recomendacion</h2> <!--Subtitulo 2-->
+						
+						<label>La recomendarias a tus amigos:</label><br>
+						
+						<input type="radio" name="recom" value="Para nada"/><label>Para nada</label><br>
+						<input type="radio" name="recom" value="Puede ser"/><label>Puede ser</label><br>
+						<input type="radio" name="recom" value="Por supuesto"/><label>Por supuesto
+						</label><br>
+						
+						<br>
+						
+						<h2>Que te parece una segunda parte</h2> <!--Subtitulo 3-->
+						
+						<label>Cuentanos:</label><br>
+						
+						<input type="radio" name="parte2" value="No"/><label>No</label><br>
+						<input type="radio" name="parte2" value="Si"/><label>Si</label><br>
+						<input type="radio" name="parte2" value="Encantado"/><label>Encantado</label><br>
+					</td>
+					
+					
+					<td> 
+						
+						<h2>Has sentido miedo</h2> <!--Subtitulo 4-->
+						
+						<label>Cuentanos:</label><br>
+						
+						<input type="radio" name="miedo" value="No"/><label>No</label><br>
+						<input type="radio" name="miedo" value="Si"/><label>Si</label><br>
+						<input type="radio" name="miedo" value="Casi muero"/><label>Casi muero</label><br>
+						
+						<br>
+						
+						<h2>Volverias a verla </h2> <!--Subtitulo 5-->
+						
+						<label>Cuentanos:</label><br>
+						
+						<input type="radio" name="volver" value="Para nada"/><label>Para nada</label><br>
+						<input type="radio" name="volver" value="Puede ser"/><label>Puede ser</label><br>
+						<input type="radio" name="volver" value="Por supuesto"/><label>Por supuesto
+						</label><br>
+						
+						<hr>
+						
+						<h2>Opinion</h2> <!--Subtitulo 6-->
+						
+						<label for="comentario">Comentario:</label><br>
+						<textarea id="comentario" name="cometarios" rows="5" cols="20" 
+						placeholder=
+						"Que fue lo que menos te gusto de la pelicula:"></textarea>
+						
+						
+						<input type="submit" value="Enviar Formulario">
+						<input type="reset" value="Borrar/Reset">
+						
+					</td>
+					
+				</tr>
+				
+			</thead>
+			
+			
+		</table>
+		
+	</body>
+
+
+</html>

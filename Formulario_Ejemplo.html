@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejemplo Formulario</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<!--<form action="mailto:informatika2011@gmail.com"  method="post"> --> <!-- para enviar los datos del formulario por correo -->
+		<form action="#"  method="post"> <!-- enviamos los datos del formulario a un archivo .php --> 
+			<h2>Cuadro de texto</h2>
+			
+			<label for="nombre">Introduce tu nombre:</label> 
+			<input id="nombre" type="text" name="nombre" size="15">
+			<br>
+			<label for="telefono">Introduce tu telefono:</label> 
+			<input id="telefono" type="tel" name="telefono" size="10"  maxlength="9">
+			<br>
+			<label for="nombre">Selecciona un color:</label> 
+			<input id="color" type="color" name="color" value="#FF0000">
+			<br>
+			<label for="nombre">Introduce tu email:</label> 
+			<input id="email" type="email" name="email" size="20" placeholder="nombre@email.com">
+			<hr>
+			
+			<h2>Password</h2>
+			<label for="password">Intruduce tu clave:</label>
+			<input id="password" type="password" name="clave" size="15" placeholder="clave de acceso">
+			<hr>
+			
+			<h2>Text Area</h2>
+			<label for="comentario">Comentario:</label><br>
+			<textarea id="comentario" name="cometarios" rows="5" cols="30" placeholder="Introduce tu comentario"></textarea>
+			<hr>
+			
+			<h2>Checkbox</h2>
+			<label>Selecciona los lenguajes que conoces:</label><br>
+			<input type="checkbox" name="java" checked >Java<br>
+			<input type="checkbox" name="cmasmas">C++<br>
+			<input type="checkbox" name="csharp">C#<br>
+			<input type="checkbox" name="ada">Ada<br>
+			<hr>
+			
+			<h2>Radio buttom</h2>
+			
+			<label>Selecciones el nivel maximo de estudios:</label> <br>
+			<input type="radio" name="estudios" value="1">Sin estudios.<br>
+			<input type="radio" name="estudios" value="2">Primaria.<br>
+			<input type="radio" name="estudios" value="3">Secundaria.<br>
+			<input type="radio" name="estudios" value="4">Univesitario.<br>
+			<hr>
+			
+			<h2>Lista / Menu desplegable</h2>
+			<label for="pais">Selecciona un pais:</label>
+			<!--<select id="pais" name="pais">
+				<option value="1">Argentina</option>
+				<option value="2">España</option>
+				<option value="3">Mexico</option>
+				<option value="4">Guatemala</option>
+				<option value="5">Honduras</option>
+				<option value="6">Alemania</option>
+				<option value="7">Francia</option>
+				<option value="8">Holanda</option>
+				<option value="9">Dinamarca</option>
+				<option value="10">Reino Unido</option>
+				<option value="11">Italia</option>
+				<option value="12">EEUU</option>
+			</select>
+			-->
+			<label for="pais">Selecciona un pais:</label>
+			<select id="pais" name="pais">
+				<option value="Argentina">Argentina</option>
+				<option value="España">España</option>
+				<option value="Mexico">Mexico</option>
+				<option value="Guatemala">Guatemala</option>
+				<option value="Honduras">Honduras</option>
+				<option value="Alemania">Alemania</option>
+				<option value="Francia">Francia</option>
+				<option value="Holanda">Holanda</option>
+				<option value="Dinamarca">Dinamarca</option>
+				<option value="Reino Unido">Reino Unido</option>
+				<option value="Italia">Italia</option>
+				<option value="EEUU">EEUU</option>
+			</select>
+			<hr>
+			
+			<h2>Lista /Menu desplegable por categorias</h2>
+			
+			<label>Seleciona una fruta o verdura:</label>
+			<select name="articulo">
+				<optgroup label="Fruta">
+					<option value="1">Naranjas</option>
+					<option value="2">Manzanas</option>
+					<option value="3">Peras</option>
+					<option value="4">Platanos</option>
+					<option value="5">Ciruelas</option>
+				</optgroup>
+				
+				<optgroup label="Verduras">
+					<option value="6">Lechuga</option>
+					<option value="7">Acelga</option>
+					<option value="8">Berenjena</option>
+					<option value="9">Patata</option>
+					<option value="10">Calabaza</option>
+				</optgroup>
+			</select>
+			<hr>
+			
+			<h2>lista</h2>
+			
+			<label for="colores">Selecciona uno o varios colores:</label>
+			<select id="colores" name="colores[]" size="4" multiple>
+				<option value="1">Rojo </option>
+				<option value="2">Verde</option>
+				<option value="3">Amarillo</option>
+				<option value="4">Azul</option>
+				<option value="5">Blanco</option>
+				<option value="6">Negro</option>
+			</select>
+			
+			<label for="animal">Selecciona un animal:</label>
+			<select id="animal" name="animal" size="4">
+				<option value="perro">Perro </option>
+				<option value="gato">Gato</option>
+				<option value="caballo">Caballo</option>
+				<option value="loro">Loro</option>
+				<option value="iguana">Iguana</option>
+				<option value="tortuga">Tortuga</option>
+			</select>
+			
+			<label for="articulo">Selecciona una fruta o verdura:</label>
+			<select id="articulo" name="articulo" size="6" >
+				<optgroup label="Fruta">
+					<option value="1">Naranjas</option>
+					<option value="2">Manzanas</option>
+					<option value="3">Peras</option>
+					<option value="4">Platanos</option>
+					<option value="5">Ciruelas</option>
+				</optgroup>
+				
+				<optgroup label="Verduras">
+					<option value="6">Lechuga</option>
+					<option value="7">Acelga</option>
+					<option value="8">Berenjena</option>
+					<option value="9">Patata</option>
+					<option value="10">Calabaza</option>
+				</optgroup>
+			</select>
+			<hr>
+			
+			<h2>Seleccionar un archivo</h2>
+			<label>Introduce nombre del archivo:</label>
+			<input type="file" name="fich">
+			<hr>
+			
+			<h2>Agrupacion de datos</h2>
+			<fieldset>
+				<legend>Datos Personales</legend>
+				<label for="datosPersonales">Apellidos y Nombre:</label> <input id="datosPersonales" type="text" name="nombre" size="30"><br>
+				<label for="dni">DNI:</label><input id="dni" type="text" name="dni" size="10"><br>
+				<label for="nacimiento">Fecha de nacimiento:</label> <input id="nacimiento" type="date" name="fechanacimiento" size="15"><br>
+				<label for="direccion">Direccion:</label> <input id="direccion" type="text" name="direccion" size="30"><br>
+			</fieldset>
+			<fieldset>
+				<legend>Datos Laborales:</legend>
+				<label for="nombreEmpresa">Nombre de la empresa:</label> <input id="nombreEmpresa" type="text" name="nombreEmpresa" size="30"><br>
+				<label for="actividad">Actividad:</label> <input id="actividad" type="text" name="actividad" size="15"><br>
+				<label for="direccionEmpresa">Direccion:</label> <input id="direccionEmpresa" type="text" name="direccionempresa" size="30"><br>
+			</fieldset>
+		
+				
+			<br>
+			<input type="submit" value="Enviar Formulario">
+			<input type="reset" value="Borrar/Reset">
+		</form>
+	
+	</body>
+
+
+</html>
